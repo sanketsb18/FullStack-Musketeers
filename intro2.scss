@@ -1,0 +1,23 @@
+div{
+  background-color: yellow;
+    
+
+    h1{
+        color: red;
+    }
+}
+
+@mixin bordered($color, $width, $height) {
+    color: $color;
+    border: $width solid black;
+    width: 450px;
+    height: $height
+ }
+ 
+ .style  {
+    @include bordered(#77C1EF, 2px, 50px);
+ }
+
+ .new {
+     @include bordered(red, 4px, 100px )
+ }

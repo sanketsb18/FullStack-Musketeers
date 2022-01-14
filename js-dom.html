@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div>
+        <h1>JS DOM</h1>
+    </div> -->
+
+    <!-- <button ondblclick="welcome()"  onclick="display()">Create Content</button> -->
+
+
+    <button onclick="display()" id="cc">Create Content</button>
+
+    <input id="fname" placeholder="full name" type="text">
+
+    <button onclick="getdata()">get data</button>
+
+    <script>
+
+      // capturing - top to bottom 
+      // bubbling - bottom to top 
+
+      let btn = document.getElementById("cc")
+
+      btn.addEventListener('click', function (){
+        display()
+      }, false)
+
+      btn.addEventListener('click', ()=>{
+        welcome()
+      })
+
+      function welcome (){
+        console.log("Welcome to event listeners...")
+      }
+
+
+      function display() {
+        let body = document.body;
+
+        let container = document.createElement("div");
+
+        let text = document.createElement('h1');
+        body.appendChild(container)
+        container.appendChild(text)
+
+        let content = "JS DOM"
+
+        text.append(content)
+
+        console.log(container);
+       
+      }
+
+      function getdata(){
+         let element = document.getElementById("fname").value;
+         console.log(element)
+      }
+
+     
+    </script>
+  </body>
+</html>

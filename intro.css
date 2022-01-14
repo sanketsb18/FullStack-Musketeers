@@ -1,0 +1,19 @@
+#one{
+    color: blue;
+}
+
+h1#two{
+    color: red;
+}
+
+div h1{
+    color: darkolivegreen;
+    background-color: yellow;
+}
+
+
+
+p{
+    background-color: aqua;
+    color: brown;
+}

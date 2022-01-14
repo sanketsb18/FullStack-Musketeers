@@ -1,0 +1,55 @@
+nav{
+    background-color: black;
+    color: white;
+}
+
+li{
+    display:inline;
+    padding-right: 10px;
+}
+
+ol{
+    padding: 10px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+.block{
+    height: 100px;
+    width: 100px;
+    border: solid 1px red;
+    display: inline-block;
+}
+
+.block-1{
+    background-color: blueviolet;
+}
+
+.block-2{
+    background-color: yellow;
+    position: sticky;
+    left: 50px;
+    top: 50px;
+    
+}
+
+p{
+    height: 600px;
+}
+
+.parent{
+    height: 400px;
+    width: 400px;
+    border: solid 2px black;
+    position: relative;
+    left: 40%;
+    top: 40%;
+}
+
+.block-3{
+    background-color: chocolate;
+}
